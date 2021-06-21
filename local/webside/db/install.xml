@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/webside/db" VERSION="2021051800" COMMENT="XMLDB file webside db test"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="webside_inscription" COMMENT="each record is just a test message webside">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="name" TYPE="text"  NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="statut" TYPE="text"  NOTNULL="true" SEQUENCE="false"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="id" TYPE="primary" FIELDS="id" COMMENT="primary key"/>
+            </KEYS>
+        </TABLE>
+        <TABLE NAME="webside_facture" COMMENT="each record is just a test message webside">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="numerofacture" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="payer" TYPE="text"  NOTNULL="true" SEQUENCE="false"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="id" TYPE="primary" FIELDS="id" COMMENT="each record is just a user record message webside"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
